@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        maven {
+            name = "Fabric"
+            url = "https://maven.fabricmc.net/"
+        }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        maven {
+            name = "Fabric"
+            url = "https://maven.fabricmc.net/"
+        }
+        maven {
+            name = "Shedaniel"
+            url = "https://maven.shedaniel.me/"
+        }
+        maven {
+            name = "Terraformers"
+            url = "https://maven.terraformersmc.com/releases/"
+        }
+        mavenCentral()
+    }
+}
+
+rootProject.name = "structure-spread-tweaks"
