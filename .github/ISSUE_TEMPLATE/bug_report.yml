@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a crash or incorrect structure spacing.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft version
+      placeholder: "26.1.2"
+    validations:
+      required: true
+  - type: input
+    id: mod-version
+    attributes:
+      label: Structure Spread Tweaks version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Include what you expected and what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or crash report
+      render: text
+  - type: textarea
+    id: config
+    attributes:
+      label: Relevant config
+      render: json5

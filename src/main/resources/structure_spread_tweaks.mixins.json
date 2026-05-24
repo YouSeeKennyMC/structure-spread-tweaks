@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.kenny.structurespreadtweaks.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "StructureSetLoadMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
