@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "structure_spread_tweaks",
+  "version": "${version}",
+  "name": "Structure Spread Tweaks",
+  "description": "Configurable structure spacing for Minecraft 26.1.x Fabric modpacks.",
+  "authors": [
+    "Kenny"
+  ],
+  "contact": {
+    "sources": "https://github.com/YouSeeKennyMC/structure-spread-tweaks",
+    "issues": "https://github.com/YouSeeKennyMC/structure-spread-tweaks/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/structure_spread_tweaks/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "preLaunch": [
+      "net.kenny.structurespreadtweaks.StructureSpreadTweaksMod"
+    ],
+    "main": [
+      "net.kenny.structurespreadtweaks.StructureSpreadTweaksMod"
+    ],
+    "modmenu": [
+      "net.kenny.structurespreadtweaks.client.StructureSpreadTweaksModMenu"
+    ]
+  },
+  "mixins": [
+    "structure_spread_tweaks.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": "~${minecraft_compat_version}",
+    "java": ">=25",
+    "cloth-config": ">=${cloth_config_version}"
+  },
+  "suggests": {
+    "fabric-api": "*",
+    "modmenu": "*"
+  }
+}
